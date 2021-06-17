@@ -17,7 +17,7 @@
     "start_url": "/?source=pwa",
     "background_color": "#3367D6",
     "display": "fullscreen",
-    "scope": "/",
+    "scope": "/portfolio",
     "theme_color": "#3367D6",
     "shortcuts": [
       {
