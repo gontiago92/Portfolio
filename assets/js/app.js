@@ -1,4 +1,4 @@
-const imageName = document.querySelectorAll('.card_container .project_card span ')
+/*const imageName = document.querySelectorAll('.card_container .project_card span ')
 
 Array.from(imageName).forEach(element => {
     let imageEl = element.parentNode.parentNode
@@ -6,4 +6,4 @@ Array.from(imageName).forEach(element => {
 
     imageEl.style.background = 'url(./assets/images/' + imagePath +')'
     imageEl.style.backgroundSize = 'cover'
-})
+})*/

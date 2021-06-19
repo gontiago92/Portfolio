@@ -326,6 +326,7 @@ nav:hover ul a span {
 
 #projects .intro .card_container .project_card {
   margin-right: 40px;
+  min-width: 300px;
   background: #fff;
   -webkit-box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.2);
