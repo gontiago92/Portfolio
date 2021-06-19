@@ -88,13 +88,44 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="intro">
+            <h3 class="title reveal-1">Contact</h3>
+
+            <div class="container">
+                <form class="contact_form reveal-1" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject (optional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here..."></textarea>
+                    </div>
+        
+                    <button type="submit">Send</button>
+                </form>
+    
+                <div class="description">
+                    <small class="reveal-1">For further information about me</small>
+                    <h3 class="reveal-2">Contact me</h3>
+                
+                    <i class="contact_icon fas fa-envelope-open-text reveal-3"></i>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
     <section id="projects">
         <div class="intro">
             <h3 class="title reveal-1">Projects</h3>
 
 
             <div class="card_container reveal-1">
-                <a href="#" class="project_card">
+                <a href="#" class="project_card reveal-1">
                     <div class="project_card__image">
                         <div class="project_card__maskfilter">
                             <i class="fas fa-code"></i>
@@ -102,12 +133,12 @@
                         </div>
                     </div>
                     <div class="project_card__body">
-                        <p>Small description to the project.</p>
+                        <p>A small list of projects and the technologies used to achieve them. Click for more !</p>
                         <small>20 projects</small>
                     </div>
                 </a>
 
-                <a href="#" class="project_card">
+                <a href="#" class="project_card reveal-2">
                     <div class="project_card__image">
                         <div class="project_card__maskfilter">
                             <i class="fas fa-bezier-curve"></i>
@@ -115,7 +146,7 @@
                         </div>
                     </div>
                     <div class="project_card__body">
-                        <p>Small description to the project.</p>
+                        <p>Self made designs, because every good developer needs to able to achive great projects by him self. What better way to do it, then showing of some graphical skills.</p>
                         <small>5 projects</small>
                     </div>
                 </a>
@@ -128,7 +159,7 @@
                         </div>
                     </div>
                     <div class="project_card__body">
-                        <p>Small description to the project.</p>
+                        <p>Best of my creative work and start to finish accomplishments. Also some co-working work that gave me the experience I needed to become "the Developer"!</p>
                         <small>Coming soon</small>
                     </div>
                 </a>
@@ -141,7 +172,7 @@
                         </div>
                     </div>
                     <div class="project_card__body">
-                        <p>Small description to the project.</p>
+                        <p>Partners are important and play a huge part in growth when trying to expand your work. Here are some of the partners and sponsors I have had the honor of working with.</p>
                         <small>Coming soon</small>
                     </div>
                 </a>
@@ -194,6 +225,7 @@
             </ul>-->
         </div>
     </section>
+
     <script>
         const whoAmIsvg = document.querySelector('#logo')
         const paths = whoAmIsvg.children

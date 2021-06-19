@@ -276,6 +276,82 @@ nav:hover
                     small
                         font-size: 12px
 
+    µ
+
+#contact
+    padding: 40px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .intro
+        margin: auto
+        padding: 0
+        max-width: 1000px
+        width: 100%
+        font:
+            weight: 400
+            size: 18px
+        color: #b3b3b3
+        h3.title
+            margin-bottom: 20px
+            font:
+                weight: 600
+                size: 14px
+        .container
+            display: flex
+            justify-content: space-between
+            .description
+                padding: 0 40px
+                display: flex
+                flex-direction: column
+                small
+                    font:
+                        weight: 500
+                h3
+                    font:
+                        weight: 600
+                        size: 48px
+                    text-transform: uppercase
+                    color: #fff
+                .contact_icon
+                    margin: 40px
+                    font-size: 200px
+                    color: #fff
+    .contact_form
+        padding: 0 40px 40px 0
+        max-width: 500px
+        min-width: 300px
+        width: 100%
+        .form-group
+            padding: 10px 0px
+        input, textarea
+            margin: 0
+            padding: 8px 10px
+            width: 100%
+            border: 1px solid #ccc
+            border-radius: 4px
+            outline: none
+            font:
+                family: $mainFont
+                weight: 500
+        textarea
+            resize: none
+
+        button
+            margin: 0
+            padding: 10px 20px
+            width: 100%
+            background: transparent
+            border: 2px solid #62B0A5
+            text-transform: uppercase
+            letter-spacing: 4px
+            color: #62B0A5
+            transition: 300ms ease
+            &:hover
+                background: #62B0A5
+                color: #fff
+                cursor: pointer
 
 [class*="reveal"]
     opacity: 0
@@ -323,6 +399,10 @@ nav:hover
         
 
 @media screen and (max-width: 1500px)
+
+    .landing_page
+        padding: 40px
+
     #projects
         .intro
             .card_container
@@ -353,6 +433,38 @@ nav:hover
                 background-size: 500px
                 top: -100px
                 left: calc( 50% - 100px )
+
+@media screen and (max-width: 1200px)
+    #contact
+        padding: 40px
+        height: 100%
+        .intro
+            margin: 0
+            .container
+                margin: 0
+                padding: 0
+                display: flex
+                flex-direction: column
+                justify-content: start
+                align-items: center
+                .contact_form
+                    margin: 0
+                    padding: 0
+                    order: 2
+                .description
+                    margin: 0
+                    padding: 0
+                    width: 100% 
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    order: 1
+                    h3
+                        margin: 0
+                        font-size: 28px
+                    .contact_icon
+                        margin: 40px 0
+                        font-size: 72px
 
 @media screen and (max-width: 680px)
     .landing_page
