@@ -26,6 +26,20 @@ contact.addEventListener('submit', e => {
 
 })
 
+/* function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+const skills = document.querySelectorAll('.skills_list li');
+
+skills.forEach(skill => {
+    const max = window.innerWidth
+
+    console.log(skill)
+    let position = getRandomArbitrary(0, max)
+    skill.style.left = position + "px"
+}) */
+
 /*const imageName = document.querySelectorAll('.card_container .project_card span ')
 
 Array.from(imageName).forEach(element => {

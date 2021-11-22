@@ -297,6 +297,38 @@ nav:hover ul a span {
   cursor: pointer;
 }
 
+#skills {
+  padding: 40px;
+  height: 100%;
+}
+
+#skills .intro {
+  margin: auto;
+  max-width: 1440px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #b3b3b3;
+  position: relative;
+}
+
+#skills .intro .title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#skills .intro ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#skills .intro ul li {
+  position: absolute;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 #projects {
   padding: 40px;
   height: 100%;
