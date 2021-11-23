@@ -66,7 +66,7 @@
             <use xlink:href="./assets/images/logo.svg#gtlogo"></use>
         </svg>
             
-        <a class="arrow" href="#"><i class="fa fa-arrow-down"></i></a>
+        <a class="arrow" href="#whoami"><i class="fa fa-chevron-down"></i></a>
     </section>
 
     <section id="whoami">
@@ -91,13 +91,21 @@
         </div>
     </section>
 
-    <!--<section id="skills">
+    <section id="skills">
         <div class="intro">
             <h3 class="title reveal-1">Skills</h3>
-            <ul class="skills_list">
-                <li>JavaScript</li>
+            <p class="text reveal-2">Down below are some of technologies I use a regular basis, mostly for small or private projects.
+                I keep learning new technologies on a regular basis as they quickly evolve and try to master and improve those I'm already familiar with. 
+            </p>
+            <br>
+            <p class="text reveal-3">
+                Since I've been learning programming languages by my self and only now feel more confortable with the knowledge I've aquired, 
+                I decided to take an opportunity to put my skills to good use by working for a company and with collegues that share the same passion I do for Web technologies.
+            </p>
+            <ul class="skills_list reveal-4" id="skills_list">
                 <li>React</li>
                 <li>Node JS</li>
+                <li>JavaScript</li>
                 <li>PHP</li>
                 <li>MYSQL</li>
                 <li>HTML5</li>
@@ -105,7 +113,7 @@
                 <li>SASS</li>
             </ul>
         </div>
-    </section>-->
+    </section>
 
     <section id="projects">
         <div class="intro">
@@ -135,7 +143,7 @@
                     </div>
                     <div class="project_card__body">
                         <p>Self made designs, because every good developer needs to able to achive great projects by him self. What better way to do it, then showing of some graphical skills.</p>
-                        <small>5 projects</small>
+                        <small>I'll be posting here soon</small>
                     </div>
                 </a>
 
@@ -165,61 +173,22 @@
                     </div>
                 </a>
             </div>
-
-<!--
-            <div class="list-group reveal-2">
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Design</h5>
-                    <small class="date"><i class="fas fa-bezier-curve"></i></small>
-                  </div>
-                    <p class="mb-1">Digital products created from self made designs !</p>
-                    <small class="text-muted">20 projects</small>
-                </a>
-               
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">Developement</h5>
-                      <small class="date"><i class="fa fa-code"></i></small>
-                    </div>
-                      <p class="mb-1">Websites completely coded from my own designs !</p>
-                      <small class="text-muted">4 projects</small>
-                  </a>
-
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">Achivements</h5>
-                      <small class="date"><i class="fas fa-trophy"></i></small>
-                    </div>
-                      <p class="mb-1">I'll be posting my achivements here soon !</p>
-                      <small class="text-muted">Comming soon</small>
-                  </a>
-
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">Partners</h5>
-                      <small class="date"><i class="fas fa-hands-helping"></i></small>
-                    </div>
-                      <p class="mb-1">I'll be posting my achivements here soon !</p>
-                      <small class="text-muted">Comming soon</small>
-                  </a>
-              </div>
-
-            <ul class="reveal-2">
-                <li class="reveal-1">Developement</li>
-                <li class="reveal-2">Design</li>
-                <li class="reveal-3">Achivements</li>
-                <li class="reveal-4">Partners</li>
-            </ul>-->
         </div>
     </section>
 
     <section id="contact">
         <div class="intro">
-            <h3 class="title reveal-1">Contact</h3>
 
             <div class="container">
-                <form id="contactForm" class="contact_form reveal-1" method="POST">
+
+                <div class="description">
+                    <small class="reveal-1">For further information about me</small>
+                    <h3 class="reveal-2">Contact me</h3>
+                
+                    <i class="contact_icon fas fa-envelope-open-text reveal-3"></i>
+                </div>
+
+                <form id="contactForm" class="contact_form reveal-4" method="POST">
                     <div class="form-group">
                         <input type="email" name="email" placeholder="Your email">
                     </div>
@@ -232,76 +201,13 @@
         
                     <button type="submit">Send</button>
                 </form>
-    
-                <div class="description">
-                    <small class="reveal-1">For further information about me</small>
-                    <h3 class="reveal-2">Contact me</h3>
-                
-                    <i class="contact_icon fas fa-envelope-open-text reveal-3"></i>
-                </div>
+
             </div>
             
         </div>
         
     </section>
 
-    
-
-    <script>
-        const whoAmIsvg = document.querySelector('#logo')
-        const paths = whoAmIsvg.children
-        console.log(paths)
-        Array.from(paths).forEach((path, index) => {
-            let letter = paths[index]
-            let size = letter.getTotalLength()
-
-            letter.style.strokeDasharray = size
-            letter.style.strokeDashoffset = size
-            letter.style.animation = 'line-anim 4s ease forwards ' + index / 2 + 's'
-            
-        })
-
-        whoAmIsvg.style.animation = 'fill 1s ease forwards 1100ms'
-
-        const handleScrollingToSection = (e) => {
-            e.preventDefault()
-            //const href = e.target.getAttribute('href')
-            //const targetEl = document.querySelector(href).getBoundingClientRect()
-            if(window.scrollY <= 0)
-                document.querySelector('nav').classList.remove('sticky')
-            else
-                document.querySelector('nav').classList.add('sticky')
-                
-
-        }
-
-        document.addEventListener('scroll', handleScrollingToSection)
-
-
-        // Receql content progressivelly on intersection
-        const ratio = .2
-        const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: ratio
-        }
-
-        const handleIntersect = function(entries, observer) {
-            entries.forEach(entry => {
-                if(entry.intersectionRatio > ratio) {
-                    console.log('visible')
-                    entry.target.classList.add('reveal-visible')
-                    observer.unobserve(entry.target)
-                }
-            })
-
-        }
-
-        let observer = new IntersectionObserver(handleIntersect, options);
-        document.querySelectorAll('[class*="reveal-"]').forEach(element => {
-            observer.observe(element)
-        })
-    </script>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>

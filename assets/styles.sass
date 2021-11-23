@@ -211,33 +211,43 @@ nav:hover
                 cursor: pointer
 
 #skills
-    padding: 40px
-    height: 100%
+    padding: 40px 40px 200px 40px
+    min-height: 100%
+    height: auto
     .intro
         margin: auto
-        max-width: 1440px
+        padding: 40px
+        max-width: 600px
         font:
             weight: 400
             size: 18px
         color: #b3b3b3
-        position: relative
+        
         .title
             margin-bottom: 20px
             font:
                 weight: 600
                 size: 14px
+        .text
+            letter-spacing: 2px
+            text-align: justify
         ul
             margin: 0
             padding: 0
+            width: 100%
             list-style: none
+            position: relative
             li
                 position: absolute
                 font-weight: 600
                 text-transform: uppercase
+                text-align: center
+                color: #62B0A5
 
 #projects
     padding: 40px
-    height: 100%
+    min-height: 100%
+    height: auto
     background: #25262A
     .intro
         margin: auto
@@ -302,8 +312,6 @@ nav:hover
                     small
                         font-size: 12px
 
-    µ
-
 #contact
     padding: 40px
     height: 100%
@@ -313,7 +321,7 @@ nav:hover
     .intro
         margin: auto
         padding: 0
-        max-width: 1000px
+        max-width: 800px
         width: 100%
         font:
             weight: 400
@@ -333,20 +341,22 @@ nav:hover
                 flex-direction: column
                 small
                     font:
+                        size: 14px
                         weight: 500
                 h3
+                    text-align: center
                     font:
                         weight: 600
-                        size: 48px
+                        size: 28px
                     text-transform: uppercase
                     color: #fff
                 .contact_icon
                     margin: 40px
-                    font-size: 200px
+                    font-size: 140px
                     color: #fff
     .contact_form
         padding: 0 40px 40px 0
-        max-width: 500px
+        max-width: 600px
         min-width: 300px
         width: 100%
         .form-group
@@ -476,7 +486,7 @@ nav:hover
                 .contact_form
                     margin: 0
                     padding: 0
-                    order: 2
+
                 .description
                     margin: 0
                     padding: 0
@@ -484,7 +494,7 @@ nav:hover
                     display: flex
                     flex-direction: column
                     align-items: center
-                    order: 1
+
                     h3
                         margin: 0
                         font-size: 28px
@@ -495,6 +505,13 @@ nav:hover
 @media screen and (max-width: 680px)
     .landing_page
         padding: 40px
+
+
+    #skills
+        .intro
+            .text
+                font:
+                    size: .8em
 
     #projects
         .intro
