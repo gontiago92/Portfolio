@@ -100,14 +100,14 @@ contact.addEventListener('submit', e => {
     e.preventDefault()
     let formData = new FormData(contact)
 
-    const email = formData.get('email')
+    const email = "tiago.goncalves.faria@gmail.com"
     const subject = formData.get('subject')
     const message = formData.get('message')
 
-    if(email === "" || subject === "" || message === "")
+    if(subject === "" || message === "")
         return alert("Please fill in all the fields!");
 
-    let url = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
+    let url = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
 
     document.location.href = url
 
